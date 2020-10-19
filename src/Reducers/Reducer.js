@@ -3,9 +3,10 @@ const initialState = {
 };
 
 const incrementReducer = (state = initialState, action) => {
-  switch (action.payload) {
+  switch (action.type) {
     case "INCREMENT":
       return {
+        ...state,
         number: action.payload.number,
       };
     default:
