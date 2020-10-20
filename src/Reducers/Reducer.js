@@ -9,6 +9,11 @@ const incrementReducer = (state = initialState, action) => {
         ...state,
         number: action.payload.number,
       };
+    case "DECREMENT":
+      return {
+        ...state,
+        number: action.payload.number,
+      };
     default:
       return state;
   }

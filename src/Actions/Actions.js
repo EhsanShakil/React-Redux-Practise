@@ -1,4 +1,4 @@
-const Increment = (value) => {
+export const Increment = (value) => {
   return {
     type: "INCREMENT",
     payload: {
@@ -6,4 +6,12 @@ const Increment = (value) => {
     },
   };
 };
-export default Increment;
+
+export const Decrement = (value) => {
+  return {
+    type: "DECREMENT",
+    payload: {
+      number: value - 1,
+    },
+  };
+};
