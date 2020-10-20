@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Increment, Decrement } from "./Actions/Actions";
-// import Decrement from "./Actions/Actions";
 
 function App(props) {
   return (
@@ -11,7 +10,7 @@ function App(props) {
         Increment
       </button>
       <button onClick={() => props.dispatch(Decrement(props.number))}>
-        Increment
+        Decrement
       </button>
     </div>
   );
